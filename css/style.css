@@ -157,7 +157,6 @@ fill: currentColor;
 
 .icon-advantage-block {
   display: flex;
-  width: 270px;
   height: 120px;
   align-items: center;
   text-align: center;
@@ -176,15 +175,14 @@ fill: currentColor;
  
 }
 .team-icon {
-
+  margin-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-bottom: 30px;
-  fill: #AFB1B8;
+   fill: #AFB1B8;
    }
 
    
@@ -206,7 +204,7 @@ align-items: center;
 
 .client-link {
   display: flex;
-width: 170px;
+min-width: 170px;
 height: 92px;
 flex-basis: calc((100% - 150px) / 6);
 border: 1px solid  #AFB1B8 ;
@@ -239,7 +237,14 @@ padding-top: 200px;
 padding-bottom: 200px;
 background: #2F303A;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgraund.jpg);
+background-repeat: no-repeat; 
+background-position: center; 
+background-size: cover; 
+max-width: 1600px; 
+margin: 0 auto; 
+
 }
+
 
 .main-title {
 margin: auto;
@@ -533,10 +538,11 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
-text-align: center;
+
 }
 .icon-footer {
 background: rgba(255, 255, 255, 0.1); 
+fill: var(--white-color);
 } 
 
 .social-link {
