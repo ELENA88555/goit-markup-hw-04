@@ -168,6 +168,7 @@ fill: currentColor;
 }
 
 .team-icon-list {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,8 +176,7 @@ fill: currentColor;
  
 }
 .team-icon {
-  margin-top: 16px;
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -202,11 +202,14 @@ align-items: center;
 
    }
 
+   .client-link-list {
+    flex-basis: calc((100% - 150px) / 6);
+    
+  }
+
 .client-link {
-  display: flex;
-min-width: 170px;
+display: flex;
 height: 92px;
-flex-basis: calc((100% - 150px) / 6);
 border: 1px solid  #AFB1B8 ;
 border-radius: 4px;
 justify-content: center;
@@ -217,13 +220,15 @@ color:  #AFB1B8;
 .client-link:hover,
 .client-link:focus {
   border-color: var(--logo-link);
+  fill: var(--logo-link);
   }
 
   .client-icon {
+    fill: currentColor;
     width: 106px;
     height: 60px;
-    
-  }  
+  }
+
 
   .client-icon:hover,
   .client-icon:focus {
@@ -301,7 +306,7 @@ gap: 30px;
  
 
 .subtitle {
- padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -357,6 +362,7 @@ border: none;
   }     
   
 .heading {
+ margin-bottom: 4px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -415,7 +421,7 @@ background-color:var(--background-section-work);
   }
 
   .content {
-    box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
      background-color: var(--white-color);
   width: calc((100% - 90px) /4);
@@ -428,6 +434,7 @@ background-color: var(--background-section-work);
  }
 
 .subject {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -435,7 +442,6 @@ background-color: var(--background-section-work);
 }
  .text-profession {
 
-  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -444,8 +450,8 @@ background-color: var(--background-section-work);
   }
 
   .text-professional-contact {
-  margin-top: 10px;
-  font-weight: 400;
+    margin-bottom: 16px;
+   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -522,9 +528,7 @@ margin: auto;
   border-radius: 4px;
   border: 1px solid grey;
 }
-.client-icon {
-  fill: currentColor;
-}
+
 .client-item:hover,
 .client-item:focus {
   color: var(--accent-color);
@@ -554,3 +558,4 @@ fill: var(--white-color);
   display: flex;
   align-items: baseline;
 }
+
