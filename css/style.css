@@ -185,11 +185,14 @@ fill: currentColor;
    fill: #AFB1B8;
    }
 
-   
+   .team-icon:hover,
+   .team-icon:focus {
+   background-color: var(--logo-link);
 
-.team-icon:hover,
-.team-icon:focus {
-background-color: var(--logo-link);
+   }
+
+.team-icon:hover .team-icon-link,
+.team-icon:focus .team-icon-link {
 fill: var(--white-color);
 
    }
@@ -444,7 +447,7 @@ background-color: var(--background-section-work);
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--color-grey);
   }
