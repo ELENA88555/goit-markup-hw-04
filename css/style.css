@@ -217,24 +217,23 @@ border: 1px solid  #AFB1B8 ;
 border-radius: 4px;
 justify-content: center;
 align-items: center;
-color:  #AFB1B8;
+
 
 }
 .client-link:hover,
 .client-link:focus {
   border-color: var(--logo-link);
-  fill: var(--logo-link);
-  }
+    }
 
   .client-icon {
-    fill: currentColor;
+    fill: #AFB1B8 ;
     width: 106px;
     height: 60px;
   }
 
 
-  .client-icon:hover,
-  .client-icon:focus {
+  .client-link:hover .client-icon,
+  .client-link:focus .client-icon {
     fill: var(--logo-link);
   }
 
@@ -514,7 +513,6 @@ margin: auto;
   gap: 9px;
   flex-direction: column;
 
- 
 }
  .section-footer {
  margin: 0;
